@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Stayr | Smart AI Travel Meta-Search & Hotel Price Aggregator</title>
+    <meta name="title" content="Stayr | Smart AI Travel Meta-Search & Hotel Price Aggregator" />
+    <meta name="description" content="Stayr is an independent travel comparison engine using live AI analytics to aggregate real-time hotel prices, flight deals, and interactive map recommendations across worldwide booking platforms." />
+    <meta name="keywords" content="Stayr, travel meta search, hotel price aggregator, Booking.com comparison, Agoda deals, Expedia aggregator, Trip.com, AI travel advisor, hotel price map" />
+    <meta name="author" content="Stayr Global Inc." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stayr.ai" />
+    <meta property="og:site_name" content="Stayr Meta-Search Broker" />
+    <meta property="og:title" content="Stayr | Smart AI Travel Meta-Search & Hotel Price Aggregator" />
+    <meta property="og:description" content="Stayr is an independent travel comparison engine using live AI analytics to aggregate real-time hotel prices, flight deals, and interactive map recommendations across worldwide booking platforms." />
+    <meta property="og:image" content="https://stayr.ai/og-cover.jpg" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://stayr.ai" />
+    <meta name="twitter:title" content="Stayr | Smart AI Travel Meta-Search & Hotel Price Aggregator" />
+    <meta name="twitter:description" content="Stayr is an independent travel comparison engine using live AI analytics to aggregate real-time hotel prices, flight deals, and interactive map recommendations across worldwide booking platforms." />
+    <meta name="twitter:image" content="https://stayr.ai/og-cover.jpg" />
+
+    <!-- JSON-LD Schema.org Structured Data for AI Search Agents & Crawlers -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TravelAgency",
+          "@id": "https://stayr.ai/#organization",
+          "name": "Stayr Meta-Search Engine",
+          "alternateName": "Stayr Travel Broker",
+          "url": "https://stayr.ai",
+          "logo": "https://stayr.ai/logo.png",
+          "description": "Stayr is an independent travel comparison engine using live AI analytics to aggregate real-time hotel prices, flight deals, and interactive map recommendations across worldwide booking platforms including Booking.com, Agoda, Expedia, and Trip.com.",
+          "knowsAbout": ["Hotel Price Comparison", "Interactive GIS Maps", "AI Travel Itineraries", "Global OTA Aggregation"],
+          "sameAs": [
+            "https://www.booking.com",
+            "https://www.agoda.com",
+            "https://www.expedia.com",
+            "https://www.trip.com"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://stayr.ai/#website",
+          "url": "https://stayr.ai",
+          "name": "Stayr | AI Travel Meta-Search Broker",
+          "publisher": {
+            "@id": "https://stayr.ai/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://stayr.ai/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "AggregateOffer",
+          "@id": "https://stayr.ai/#offers",
+          "name": "Worldwide Real-Time Hotel Price Aggregator",
+          "priceCurrency": "USD",
+          "lowPrice": "18",
+          "highPrice": "2800",
+          "offerCount": "1250000",
+          "seller": {
+            "@id": "https://stayr.ai/#organization"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Google Fonts: Cairo & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#090d16] text-slate-100 font-['Cairo',sans-serif] antialiased selection:bg-cyan-500/30 selection:text-cyan-200 min-h-screen overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

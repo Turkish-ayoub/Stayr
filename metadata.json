@@ -1,0 +1,6 @@
+{
+  "name": "Stayr - Smart Interactive Hotel & Travel Map",
+  "description": "Stayr: محرك الخريطة الذكية ومقارنة أسعار الفنادق العالمية وعروض السفر مع المستشار الذكي",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
